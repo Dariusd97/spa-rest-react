@@ -1,0 +1,35 @@
+Comenzi pentru serviciul REST:
+User:
+	GET:
+o	https://web-practice-dobredarius.c9users.io/users-> returneaza toti utilizatorii
+o	https://web-practice-dobredarius.c9users.io/users/:userId -> returneaza un singur utilizator
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists -> returneaza toti artistii din lista de favoriti a unui utilizator
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists/:artistId -> returneaza un artist din lista de favoriti a unui utilizator
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists/:artistId/paintings -> returneaza toate picturile alea artistilor care se afla in lista de favoriti a unui utilizator
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists/:artistId/paintings/:paintingId -> returneaza o pictura a unui artists care se afla in lista de favoriti a unui utilizator
+
+	POST:
+o	https://web-practice-dobredarius.c9users.io/users -> adauga un utilizator
+o	https://web-practice-dobredarius.c9users.io/users?bulk=on -> adauga mai multi utilizatori
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists -> adauga un artist
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists/:artistId/paintings -> adauga o creatie
+
+	PUT:
+o	https://web-practice-dobredarius.c9users.io/users/:userId -> modifica un utilizator 
+
+	DELETE:
+o	https://web-practice-dobredarius.c9users.io/users/:userId -> sterge un utilizator
+o	https://web-practice-dobredarius.c9users.io/users/:userId/favorites/artists/:artistId -> sterge un artist
+Artist:
+	GET:
+o	https://web-practice-dobredarius.c9users.io/artists -> returneaza toti artistii
+o	https://web-practice-dobredarius.c9users.io/artists/:artistId -> returneaza un artist
+Painting:
+	GET:
+o	https://web-practice-dobredarius.c9users.io/paintings -> returneaza toate picturile
+o	https://web-practice-dobredarius.c9users.io/paintings/:paintingId -> returneaza o pictura
+Category:
+	GET:
+o	https://web-practice-dobredarius.c9users.io/categories -> returneaza toate categoriile
+o	https://web-practice-dobredarius.c9users.io/categories/:categoryId -> returneaza o categorie
+o	https://web-practice-dobredarius.c9users.io/categories/:categoryId/paintings -> returneaza toate picturile de la o categorie

@@ -1,0 +1,51 @@
+body {
+  background-color: #FFCC00;
+  padding: 20px;
+  margin: 0;
+}
+h1, p, ol, li {
+  font-family: Helvetica, Arial, sans-serif;
+}
+ol.menuBar li {
+  display: inline;
+  list-style-type: none;
+  
+}
+ol.menuBar {
+  background-color: #111;
+  padding: 0;
+  border-radius: 25px;
+}
+ol.menuBar li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  margin-left: 20px;
+  margin-right: 20px;
+  display:inline-block;
+  width:97%;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  background-color: #0099FF;
+}
+.form-container{
+    text-align: center;
+    line-height: 100vh;
+}
+.login-form{
+   
+    display: inline-block;
+    line-height: 25px;
+    border:1px dashed aqua;
+    border-radius:7px;
+}
+h2 { color: black; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
