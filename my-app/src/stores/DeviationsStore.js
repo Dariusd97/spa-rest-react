@@ -9,8 +9,8 @@ const DevianPopularURL='https://www.deviantart.com/api/v1/oauth2/browse/popular?
 const DevianNewestURL='https://www.deviantart.com/api/v1/oauth2/browse/newest?access_token='
 const DevianDailyURL='https://www.deviantart.com/api/v1/oauth2/browse/dailydeviations?access_token='
 
-const CLIENT_ID = '9145'
-const CLIENT_SECRET = 'fa8dca58c421cd6e75b2966670f84b5b'
+const CLIENT_ID = 'client_id'
+const CLIENT_SECRET = 'client_secret'
 
 async function testToken(){
     let tokenExistent = await axios(`${SERVER}/tokens`);
