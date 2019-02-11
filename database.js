@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
 
-const database = process.env.database || 'c9';
-const username = process.env.username || 'darius';
-const password = process.env.password || 'loaded';
-const hostname = process.env.hostname || 'localhost';
+const database = process.env.database || 'databse_name';
+const username = process.env.username || 'username';
+const password = process.env.password || 'password';
+const hostname = process.env.hostname || 'hostname';
 
 
 const sequelize = new Sequelize(database, username, password, {
