@@ -18,7 +18,7 @@ Aplicatia are o bara de meniu cu urmatoarele butoane:
 5. `Newest deviations`
 6. `Favorites`
 
-Butonul de `Login` duce catre pagina de login a aplicatie. Acesta nu este functional de aceea
+Butonul de `Login` duce catre pagina de login a aplicatie. Acesta nu este implementat de aceea
 in cod in toate requesturile este hardcodat id-ul primului user.
 
 Butoanele de `Home`, `Hot deviations`, `Popular deviations` si `Newest deviations` duc catre
