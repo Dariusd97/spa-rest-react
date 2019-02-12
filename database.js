@@ -5,7 +5,7 @@ const username = process.env.username || 'username';
 const password = process.env.password || 'password';
 const hostname = process.env.hostname || 'hostname';
 
-
+// connection to database
 const sequelize = new Sequelize(database, username, password, {
     host: hostname,
     dialect: 'mysql',
@@ -14,6 +14,7 @@ const sequelize = new Sequelize(database, username, password, {
 	}
 });
 
+// import models
 const db = {
     User: sequelize.import('models' + '/User'),
     Favorite: sequelize.import('models' + '/Favorite'),
@@ -21,12 +22,12 @@ const db = {
     Artist: sequelize.import('models' + '/Artist'),
     AccessToken : sequelize.import('models' +'/AccessToken')
 };
-
+// establish relations between tables
 db['User'].hasOne(db['Favorite']);
 db['Favorite'].hasMany(db['Artist']);
 db['Artist'].hasMany(db['Painting']);
 
-
+// create tables
 sequelize.sync()
     .then()
     .catch((error) => console.log(error));
