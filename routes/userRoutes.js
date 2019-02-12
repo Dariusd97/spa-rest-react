@@ -5,6 +5,7 @@ const os = require('os');
 
 const router = Router();
 
+// get all users
 router.get('/', async(req, res, next) => {
     try{
         await db['User'].findAndCountAll({ attributes: ['username', 'firstName', 'lastName'] }).then(users => {
@@ -25,6 +26,7 @@ router.get('/', async(req, res, next) => {
     }
 });
 
+// get one user
 router.get('/:userId', async(req, res, next) => {
     try{
         await db['User'].findByPk(parseInt(req.params.userId)).then(users => {
